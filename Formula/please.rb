@@ -5,21 +5,21 @@
 class Please < Formula
   desc "A natural language interface for your terminal"
   homepage "https://github.com/iishyfishyy/please"
-  version "1.0.5"
+  version "1.0.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/iishyfishyy/please/releases/download/v1.0.5/please_1.0.5_Darwin_x86_64.tar.gz"
-      sha256 "24bc459259174616955d837fabb2aeb5f5bf743cd1bd83b45d28e2768f13efae"
+      url "https://github.com/iishyfishyy/please/releases/download/v1.0.6/please_1.0.6_Darwin_x86_64.tar.gz"
+      sha256 "25afb4ac6281faa06a79d0b22d7b434ee2e0f02c84182818fae9a8429d8df53b"
 
       def install
         bin.install "please"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/iishyfishyy/please/releases/download/v1.0.5/please_1.0.5_Darwin_arm64.tar.gz"
-      sha256 "b17acfb98a6aec27dbbd22532462e9e09c8a755b47127e22f2afbe1d293fe764"
+      url "https://github.com/iishyfishyy/please/releases/download/v1.0.6/please_1.0.6_Darwin_arm64.tar.gz"
+      sha256 "95aff80360a61471a8227659139d4c2e008dca18d190ff337caa6ead48c92133"
 
       def install
         bin.install "please"
@@ -29,15 +29,15 @@ class Please < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/iishyfishyy/please/releases/download/v1.0.5/please_1.0.5_Linux_x86_64.tar.gz"
-      sha256 "7cc4a4d1d4d5b8fc8140689b661768df3b6fe9c2d5bebc5f5fdd445569400d7a"
+      url "https://github.com/iishyfishyy/please/releases/download/v1.0.6/please_1.0.6_Linux_x86_64.tar.gz"
+      sha256 "68ad8431d0191d32687552a6314219a812e3d997a243cbbd700666a9771c1b25"
       def install
         bin.install "please"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/iishyfishyy/please/releases/download/v1.0.5/please_1.0.5_Linux_arm64.tar.gz"
-      sha256 "a0b8e77df49a40354430d935a0dd4da05640e058d88cf5d7c6f50e42ae44cdbc"
+      url "https://github.com/iishyfishyy/please/releases/download/v1.0.6/please_1.0.6_Linux_arm64.tar.gz"
+      sha256 "a42a5358a7294e6e68f643fcc94174cef59cea2e812d9115201d5bc1a4c7fb20"
       def install
         bin.install "please"
       end
